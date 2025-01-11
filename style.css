@@ -1,22 +1,57 @@
 /* General Styles */
 body {
     font-family: 'Fira Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+    
+    align-self: center;
     box-sizing: border-box;
     background-color: #f5f5f5;
     color: #333;
+}
+
+body section,header  {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+/* Header Section */
+header {
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Outlined Button */
+.outlined-button {
+    background-color: transparent;
+    border: 2px solid #127643;
+    color: #127643;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 /* Hero Section */
 
 
 .hero {
-    height: 100vh;
-    padding: 0px 5%;
-    background-color: #11721640;
+    
     align-content: center;
     align-items: center;
+    margin-bottom: 80px;
+}
+.hero > .container{
+    padding: 80px 5%;
+    border-radius: 15px;
+    background-color: #11721640;
 }
 
 .hero .grid {
@@ -41,7 +76,7 @@ body {
 }
 
 .hero h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
     margin-top: 0px;
@@ -68,7 +103,7 @@ body {
 
 /* Vision Section */
 .vision {
-    padding:5%;
+    margin-bottom: 80px;
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -158,8 +193,7 @@ body {
 
 /* Recent News Section */
 .news {
-    padding: 40px 5%;
-    background-color: #f9f9f9;
+    margin-bottom: 80px;
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -241,7 +275,7 @@ body {
 
 /* Donate Section */
 .donate {
-    padding: 40px 5%;
+    margin-bottom: 80px;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
 }
@@ -300,4 +334,50 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+footer h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer separator {
+    display: block;
+    max-width: 800px;
+    height: 1px;
+    background-color: #3333334e;
+    margin: 20px auto;
+}
+
+/* Social Media Icons */
+footer .flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .flex a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+footer .flex a:hover {
+    transform: scale(1.1);
+}
+
+footer .flex img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
 }
