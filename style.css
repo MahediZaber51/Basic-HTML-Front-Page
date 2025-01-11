@@ -301,3 +301,39 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Card Hover Effect */
+.cardview {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cardview:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-10px); 
+}
+
+/* Donate Section Card Hover Effect */
+.donation-amount {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.donation-amount:hover {
+    background-color: #e7f7e7;
+    transform: translateY(-5px);
+}
+
+/* Button Hover Effect */
+.hero button, 
+.cardview button, 
+.news-text button, 
+.donate-button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero button:hover, 
+.cardview button:hover, 
+.news-text button:hover, 
+.donate-button:hover {
+    background-color: #0d5e2e;
+    transform: scale(1.05);
+}
